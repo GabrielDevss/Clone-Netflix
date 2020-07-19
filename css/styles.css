@@ -1,16 +1,13 @@
 *{
   box-sizing: border-box;
 }
-
 body{
   margin: 0;
   padding: 0;
   font-family: 'Helevetica Neue', Arial, Helvetica, sans-serif;
   background-color: #141414;
 }
-
 .container {
- height: 100vh;
  background-image: linear-gradient(
    to bottom,
    rgba(0, 0, 0, 0.8) 0%,
@@ -25,8 +22,9 @@ body{
 .hero {
   width: 100%;
   margin: 0 auto;
-  height: 100%;
   padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
 }
 .header {
   display: flex;
@@ -41,7 +39,6 @@ body{
   justify-content: space-between;
   width: 100%;
   align-items: center;
- 
 }
 .menu-left,
 .menu-right {
@@ -80,7 +77,6 @@ body{
 }
 .banner .poster {
   width: 450px;
-
 }
 .banner .subtitle {
   font-size: 1.25rem;
@@ -90,7 +86,6 @@ body{
 }
 .buttons {
   margin-top: 2rem;
-
 }
 .buttons .btn {
   color: #fff;
@@ -118,13 +113,11 @@ body{
   color: #e5e5e5;
   font-size: 18px;
   line-height: 17px;
-  
 }
 .slider {
   margin-top: 0.8rem;
   display: flex;
   overflow: hidden;
-  position: absolute;
   left: 3.75rem;
   right: 0;
 }
@@ -134,4 +127,32 @@ body{
 .slider .movie img {
   max-width: 100%;
   padding-right: 5px;
+}
+.footer {
+  margin: 100px auto 0;
+  width: 80%;
+  color: #80808080;
+}
+.footer .social i {
+    padding-right: 26px;
+    font-size: 28px;
+    margin-left: 50px;
+}
+.flex {
+  display: flex;
+  padding-bottom: 80px;
+  color: #80808080;
+ 
+}
+.footer .info {
+  width: 25%;
+  display: flex;
+}
+.footer .info ul  {
+  list-style: none;
+  display: inline;
+  font-size: 13px;
+}
+.footer .info ul li {
+  margin-top: 8px;
 }
